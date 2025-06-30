@@ -11,3 +11,14 @@ Features
 - Out-of-sync Bor or Heimdall nodes
 - Easy configuration through a single file
 - Dockerized for smooth deployment
+
+
+Project Structure
+
+.
+├── .env                        # Environment variables (Telegram Bot, RPCs)
+├── config.js                  # Project configuration (Validator address, RPCs, etc.)
+├── index.js                   # Core monitoring logic
+├── Dockerfile                 # Containerization script
+├── package.json               # Node.js dependencies and metadata
+└── README.md                  # Documentation (You are here)
