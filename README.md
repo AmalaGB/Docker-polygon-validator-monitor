@@ -1,6 +1,9 @@
 Polygon Validator Monitoring Tool
 
-This is a lightweight, containerized monitoring tool for tracking Polygon validator node performance. It monitors critical metrics such as checkpoints signed/proposed, Bor and Heimdall sync status, and alerts the operator if any issues arise. Designed for reliability and easy deployment via Docker, the tool helps ensure optimal uptime and network participation for validators.
+A Node.js and Docker-based monitoring tool that observes and ensures the proper functioning of a Polygon validator node. It's designed to help operators detect issues like missed checkpoints and synchronization problems between Bor and Heimdall (the two key components of the Polygon network infrastructure).
+
+🧩 Use Case
+Imagine you're running a validator node on the Polygon PoS network. This tool keeps watch on it 24/7 and notifies you instantly via Telegram if something goes wrong — helping you prevent slashing, downtime, or missed rewards.
 
 Features
 
@@ -11,6 +14,13 @@ Features
 - Out-of-sync Bor or Heimdall nodes
 - Easy configuration through a single file
 - Dockerized for smooth deployment
+
+  🔔 Alerts
+This monitor sends alerts to Telegram using a bot. You will receive alerts if:
+  Your validator misses checkpoints
+  Heimdall or Bor fall out of sync
+Ensure your Telegram Bot and Chat ID are configured in .env.
+
 
 
 Project Structure
